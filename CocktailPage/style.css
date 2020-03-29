@@ -1,0 +1,145 @@
+/* Umístění body tagu a vlození obrázku jako pozadí */
+body {
+	background: url('obrazky/pozadi_sede.png') #1c2228;
+	margin: 73px 0px 0px 0px;
+	font: 14px Verdana;
+	min-width: 960px;
+}
+
+/* Ostylování tagů h2 až h6 (nadpisů) */
+h2, h3, h4, h5, h6 {
+	text-align: left;
+	color: #0a294b;
+	font-family: Arial;
+	text-shadow: 3px 3px 7px #666666;
+}
+
+/* Změna velikosti písma v tagu h2 */
+h2 {
+	font-size: 1.7em;
+}
+
+/* Změna velikosti barvy a vycentrování tagu h1 a přidání stínování písma */
+h1 {
+	font-size: 2em;
+	font-weight: normal;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 1px #0a294b;
+}
+
+/* Ostylování navigace
+	margin určuje šírku vnějšího okraje
+	list-style-type určuje vzhled odrážky nebo čísla*/
+nav ul {
+	margin: 0px;
+	list-style-type: none;
+}
+
+/* Ostylování jednotlivých tlačítek v navigaci */
+nav ul li {
+	float: left;
+	padding: 0px 25px;
+	margin: 0 5px;
+	font-size: 17px;
+	height: 73px;
+	line-height: 4.3em;
+}
+
+/* Přidání aktivních efektů k jednotlivým tlačítkům navigace */
+nav ul li:hover, .aktivni {
+	box-shadow: 0px 0px 5px black;
+	animation-name: fade;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	cursor: pointer;
+}
+
+/* Ostylování efektu na tlačítkách v navigaci */
+@keyframes fade {
+	0% {
+		background-color: #ffbb0000;
+	}
+	100% {
+		background-color: #ffbb00;
+	}
+}
+
+/* Ostylování textu v tlačítkách navigace */
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Třída pro umístění odkazu na facebook v naigaci do prava */
+.rightnav{
+	float: right;
+}
+
+/* Třída pro vycentrování obrázku v tagu header pod nadpis */
+.centrovany {
+	text-align: center;
+}
+
+/* Identifikátor pro vycentrováni article tagu */
+#centrovac {
+	margin: 0px auto;
+	width: 960px;
+}
+
+/* Výška a pozice headru - pozadí navigace */
+header {
+	height: 73px;
+	position: fixed;
+	top: 0px;
+	background: url('obrazky/pozadi_sede.png') #1c2228;
+	width: 100%;
+}
+
+/* Ostylování těla webu a vložení obrázku jako pozadí */
+article {
+	background: url('obrazky/pozadi.png') #009aca;
+	padding: 30px 0px;
+}
+
+/* Umístění tagu header v tagu article */
+article header {
+	width: 250px;
+	float: left;
+	position: static;
+	background: none;
+}
+
+/* Umístění tagu section v tagu article a jeho ostylování */
+article section {
+	width: 666px;
+	float: left;
+	background: white;
+	border: 2px solid #006797;
+	box-shadow: 2px 2px 7px #1c2228;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+/* Velikost tagu footer - patičky webu */
+footer {
+	height: 40px;
+	color: white;
+	margin: 20px 0 0 30px;
+}
+
+/* Ostylování textu v patičce webu */
+footer a {
+	color: #ffbb00;
+	text-decoration: none;
+}
+
+/* Třída pro čekání na skončení plovoucích objektů */
+.cistic {
+	clear: both;
+}
+
+/* Třída pro umístění plovoucího (obtékaného) objektu či zda je neplavec */
+.vlevo {
+	float: left;
+}
