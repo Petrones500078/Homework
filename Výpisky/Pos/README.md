@@ -1,1 +1,1 @@
-![POS POSLAT.jpg](POS/POS POSLAT.jpg)
+![POS POSLAT.jpg](Pos/POS POSLAT.jpg)
