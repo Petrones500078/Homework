@@ -1,0 +1,281 @@
+// import všech proměných a funkcí uvedených v dedekovaným souboru v,,ariables_and_similarities"
+@import "./variables/variables_and_similarities";
+
+body,
+html {
+    height: 100%;
+}
+// celé tělo mé stránky ve kterém jsou vnořené její části (hlavička, hlavní část a patička)
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    //primární barva pozadí stránky
+    background-color: $primary-color;
+    //nastavení sekundární části (designu) mí stránky
+    #background {
+        //optimalizace pro desktop a mobile
+        @include mobile {
+            transition: $desktop_trasition_time;
+            -webkit-clip-path: ellipse(60% 30% at 50% -1%);
+            clip-path: ellipse(60% 30% at 50% -1%);
+        }
+        @include desktop {
+            transition: $desktop_trasition_time;
+            -webkit-clip-path: ellipse(30% 35% at 50% -3%);
+            clip-path: ellipse(30% 35% at 50% -3%);
+        }
+        background-color: $secondary-color;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    // nastavení patičky mé stránky. (header s názvem stránky)
+    header {
+        background: $primary-color;
+        box-shadow: $box_shadows;
+        border: $secondary-color solid $buttons_border_size;
+        width: 100%;
+        height: 3.2em;
+        margin-bottom: 4rem;
+        //optimalizace na desktop a mobile
+        @include desktop {
+            transition: $desktop_trasition_time;
+            width: 60vw;
+            margin-left: 19vw;
+        }
+        @include mobile {
+            transition: $desktop_trasition_time;
+            width: 100%;
+        }
+        // Design odkazu na hlavní stránku, který má téměř stejné míry jako header
+        a {
+            @include desktop {
+                transition: $desktop_trasition_time;
+                width: 60vw;
+                color: $secondary-color;
+            }
+            @include mobile {
+                transition: $desktop_trasition_time;
+                width: 100%;
+                color: $secondary-color;
+            }
+            width: 100vw;
+            text-decoration: none;
+            padding: $padding 0;
+            text-align: center;
+            display: grid;
+            float: left;
+            font-size: $link-font-size;
+            &:hover {
+                background-color: $button_hover_color;
+                transition: $button_transition_time;
+                cursor: pointer;
+                color: $primary-color;
+                font-weight: bold;
+            }
+        }
+    }
+}
+/*
+    nejdůležitější část stránky, texttová výplň.
+    zde si hraji s upravou fontů, responzivitou, obsahem celé stránky a jejího vzhledu.
+    */
+main {
+    section#primary {
+        color: rgb(0, 0, 0);
+        padding: $padding;
+        text-align: center;
+        h1 {
+            font-size: 3em;
+            margin-top: 17.5vh;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        //Všechny články a nadpiy hlavní stránky.
+        #article {
+            background: $secondary-color;
+            padding: 20px;
+            margin: 1em auto;
+            border-radius: $border_radius;
+            box-shadow: $box_shadows;
+            width: 90%;
+            font-size: $link-font-size;
+            text-align: left;
+
+            @include desktop {
+                transition: $desktop_trasition_time;
+                width: 65vw;
+                text-align: left;
+                font-size: $link-font-size + 0.2;
+            }
+            @include mobile {
+                transition: $desktop_trasition_time;
+                width: 90%;
+                text-align: left;
+                font-size: $link-font-size;
+            }
+
+            h1 {
+                font-size: 1.57em;
+                margin-top: 1rem;
+                text-decoration-line: underline;
+            }
+            #simulace {
+                text-align: center;
+            }
+            ol {
+                @include desktop {
+                    transition: $desktop_trasition_time;
+                    width: 65vw;
+                    text-align: left;
+                }
+                @include mobile {
+                    transition: $desktop_trasition_time;
+                }
+                p {
+                    @include desktop {
+                        transition: $desktop_trasition_time;
+                        width: 65vw;
+                        text-align: left;
+                    }
+                    @include mobile {
+                        transition: $desktop_trasition_time;
+                    }
+                }
+                h1 {
+                    @include desktop {
+                        transition: $desktop_trasition_time;
+                        width: 65vw;
+                        text-align: center;
+                    }
+                    @include mobile {
+                        transition: $desktop_trasition_time;
+                    }
+                }
+            }
+            h3 {
+                font-size: 1em;
+            }
+            //Velký obrázek na začátku stránky s informacemi
+            #gif {
+                margin-top: 1em;
+                width: 100%;
+                height: 100%;
+                border-radius: $border_radius;
+                box-shadow: $box_shadows;
+                @include desktop {
+                    transition: $desktop_trasition_time;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                }
+                @include mobile {
+                    transition: $desktop_trasition_time;
+                    width: 100%;
+                    height: 100%;
+                    text-align: left;
+                }
+            }
+            //obrázky roušek a respirátorů na stránce roušky a respirátory
+            img {
+                margin-top: 1em;
+                width: 100%;
+                height: 100%;
+                border-radius: $border_radius;
+                box-shadow: $box_shadows;
+                @include desktop {
+                    transition: $desktop_trasition_time;
+                    width: 30%;
+                    height: 30%;
+                    text-align: center;
+                }
+                @include mobile {
+                    transition: $desktop_trasition_time;
+                    width: 70%;
+                    height: 70%;
+                    text-align: left;
+                }
+            }
+        }
+        // toto id se zaměřuje na tlačítka odkazu, která jsou k naeznutí hned pod textem s základními informacemi o COVID-19
+        #button {
+            background: $secondary-color;
+            padding: 4px;
+            margin: 0.5em auto;
+            border: $buttons_border_size solid $border-color;
+            box-shadow: $box_shadows;
+            width: 50%;
+            text-decoration: none;
+            font-size: $link-font-size;
+            @include desktop {
+                transition: $desktop_trasition_time;
+                width: 35vw;
+                margin-top: 5vh;
+            }
+            @include mobile {
+                transition: $desktop_trasition_time;
+                width: 50%;
+            }
+            &:hover {
+                background-color: $button_hover_color;
+                transition: 0.2s;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+                &:hover {
+                    transition: $button_transition_time;
+                }
+            }
+        }
+    }
+}
+//patička celé stránky, která obsahuje informace o mě a copyright. Footer se snažím udělat responzivní a vzhledově přívětivý.
+footer {
+    background: $primary-color;
+    width: 100%;
+    height: 3.2em;
+    @include desktop {
+        transition: $desktop_trasition_time;
+        width: 100vw;
+        border-top: rgb(0, 0, 0) solid 1px;
+        margin-top: 10vh;
+    }
+    @include mobile {
+        transition: $desktop_trasition_time;
+        width: 100%;
+        border-top: rgb(0, 0, 0) solid 1px;
+        margin-top: 10vh;
+    }
+    a {
+        color: $secondary-color;
+        width: 100vw;
+        text-decoration: none;
+        padding: $padding 0;
+        text-align: center;
+        float: left;
+        font-size: $link-font-size;
+        &:hover {
+            color: $primary-color;
+            background-color: $button_hover_color;
+            transition: $button_transition_time;
+        }
+        @include desktop {
+            transition: $desktop_trasition_time;
+            width: 100vw;
+            cursor: unset;
+        }
+        @include mobile {
+            transition: $desktop_trasition_time;
+            width: 100%;
+            cursor: unset;
+        }
+    }
+}

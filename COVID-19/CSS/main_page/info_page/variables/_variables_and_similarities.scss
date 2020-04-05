@@ -1,0 +1,42 @@
+/*
+Proměnné využité v mém scss kódu.
+Ve svých proměných nesu barvy pro design celé stránky (pro případ jednoduchého upravování designu) a také velmi frekventované hodnoty (pro lehči manipulaci s částmi stránek.)
+*/
+
+$primary-color: rgb(145, 12, 12);
+$secondary-color: lighten(rgb(255, 184, 184), 6%);
+$primary-color-darker: darken($primary-color, 20%);
+$border-color: rgb(255, 160, 160);
+$button_hover_color: rgb(235, 184, 184);
+$box_shadows: -8px 7px 15px rgb(0, 0, 0);
+
+$padding: 15px;
+$border_radius: 15px;
+$buttons_border_size: 0.2vh;
+$link-font-size: 1.1em;
+$button_transition_time: 0.3s;
+$bolder-size: $link-font-size + 0.1;
+
+/*
+Zde si definuji funkce, které1 se starají o velikost mé stránky v desktopu a na mobilu. 
+*/
+$desktop: 840px;
+$desktop_trasition_time: 1s;
+
+$mobile: 840px;
+
+@mixin desktop {
+    @media ( min-width: #{$desktop}) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+// třída, která ztuční její členy.
+.bold {
+    font-weight: bold;
+    font-size: $bolder-size;
+}
