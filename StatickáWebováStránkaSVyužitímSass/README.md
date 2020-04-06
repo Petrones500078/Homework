@@ -89,7 +89,7 @@
 
 # Závěr
 
-## mou webovou stránku naleznete na mém hostingu, pokochejte si s ní:
+## mou webovou stránku naleznete na mém hostingu, pokochejte se s ní:
 ## [michael.petro.sweb.cz](http://michael.petro.sweb.cz/) -----> [COVID-19](http://michael.petro.sweb.cz/WAP/COVID-19/)
 
 ### Děkuji:
