@@ -4,7 +4,7 @@
 
 # Matice odpovědnosti
 ## Michael - vytvořil PHP funkce + udělal dokumentaci README a komentáře funkcí PHP 
-## Dominik - Vytvořil HTML začátek + zpracoval program z Michalovích funkcí + komentáře k svému kusu programu
+## Dominik - Vytvořil HTML začátek + zpracoval program z Michalových funkcí + komentáře k svému kusu programu
 ## Jakub - nadesignoval naší webovou stránku + komentáře k css
 
 # Screenshoty
