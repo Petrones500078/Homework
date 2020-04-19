@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head souboru, metadata + odkaz na CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5; URL=index.html">
+    <link rel="stylesheet" href="style.css">
+    <title>Navigace</title>
+</head>
+<body>
+    <!-- kontejner ve kterém je celý web -->
+    <nav>
+    <!-- 
+        * číslovaný seznam (kubův nápad) s kostrou navigace
+        * ,,/" jsem musel dát odděleně abych je mohl ,,smáznout" pomocí javascriptu
+    -->
+    <ul class="breadcrumb">
+        <li><a id="first" href="#">Domů</a></li>
+        <li id="/1">/</li>
+        <li><a id="second" href="#">Produkty</a></li>
+        <li id="/2">/</li>
+        <li><a id="third" href="#">Fotoaparáty</a></li>
+        <li>/</li>
+        <li id="fourth">Zrcadlovky</li>
+        <!-- zde je můj skript, který vymaže první dva prvky navigace, když je šířka rozlišení menší než 700 (Pouze při spuštění stránky) -->
+        <script>
+            if(window.innerWidth < 700){
+                removeElement("first");
+                removeElement("second");
+                removeElement("/1");
+                removeElement("/2");
+                /*
+                **  !!!!!! TENTO KOMENTÁŘ JE ZDE JEN ABY JSTE TO PŘEČETL V README.md !!!!!!!!!! **
+
+                * zde je sckript, který refreshne stránku každé 3 sekundy 
+                ( dal jsem ho zde jen pro vás, aby jste nemusel reloadovat stránku,
+                 až budete v okně prohlížeče snižovat rozlišení aby jste viděl jak to vypadá na mopbilu )
+                 Samozřejmě, že je refreshování stránky každé 3 vteřiny absolutně nepřípustné.
+                 Verze s tímto refreshováním bude pro vás běžet na webu aby jste si vyhrál s naší navigací. 
+                 Hlavní verze je bez tohoto scriptu. 
+                */
+                setTimeout(function(){
+                    window.location.reload(1);
+                }, 3000);
+            }
+            // funkce pro odstranění elementu, není moje, zdroj jsem již nenašel, ale byl na githubu.
+            function removeElement(elementId) {
+                var element = document.getElementById(elementId);
+                element.parentNode.removeChild(element);
+            }
+        </script>
+      </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/*tělo stránky*/
+body{
+    background-color: #031321;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/*nadpis*/
+.title{
+    background-color: #2196f3;
+    text-decoration: none;
+    border-radius: 0 0 20px 20px;
+    font-size: 50px;
+    color: black;
+    margin: 0 0 40px 0 ;
+    padding: 0;
+}
+/*sekce "Zadejte URL adresu"*/
+label{
+    font-size: 20px;
+    background-color: #2196f3;
+    padding: 1vh;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+/*sekce "TOTO JSOU NADPISY"*/
+h1{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+/*vkládání adresy*/
+.input{
+    text-align: center;
+    width: 80%;
+    padding: 2vh 0;
+    margin: 5vh 0;
+    margin-top: 1vh;
+    border: #2196f3 solid 1px;
+    box-shadow: 0 0 40px #2196f3;
+    border-radius: 5px;
+}
+/*tlačítko "Odeslat"*/
+.button{
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color:#2196f3;
+    margin: 0;
+    padding: 2vh 5vh 2vh 5vh;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    border: #2196f3 solid 1px;
+}
+/*animace tlačítka*/
+.button:hover, .button:active{
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 60px #2196f3;
+    transition: .5s;
+}
+/*začátek výsledků nadpisů*/
+#h1 h1{
+    font-size: 15px;
+    text-decoration: none;
+}
+#h2 h2{
+    font-size: 15px;
+}
+#h3 h3{
+    font-size: 15px;
+}
+#h4 h4{
+    font-size: 15px;
+}
+#h5 h5{
+    font-size: 15px;
+}
+#h6 h6{
+    font-size: 15px;
+}
+/*konec výsledků nadpisů*/
+/*výsledky odkazů*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: cyan;
+    transition: 2s;
+    line-height: 2em;
+}
+a:hover {
+    color: red;
+    transition: 0.2s;
+}
