@@ -7,13 +7,8 @@
 ## Dominik - Vytvořil HTML začátek + zpracoval program z Michalových funkcí + komentáře k svému kusu programu
 ## Jakub - nadesignoval naší webovou stránku + komentáře k css
 
-# Screenshoty
-## PHP
-![1.PNG](Screenshots/Php/1.png)
-
-## CSS
-![1.PNG](Screenshots/Css/1.png)
-# Ukázka
+# Screenshoty <br>
+# Ukázky
 #### Skenování stránky https://www.youtube.com
 ## Desktop:
 #### Před vložením URL
@@ -29,6 +24,13 @@
 ![2.PNG](Screenshots/Page/Mobile/2.PNG)
 ![3.PNG](Screenshots/Page/Mobile/3.PNG)
 ![4.PNG](Screenshots/Page/Mobile/4.PNG)
+
+# Kódy
+## PHP
+![1.PNG](Screenshots/Php/1.png)
+
+## CSS
+![1.PNG](Screenshots/Css/1.png)
 
 # Zde naleznete celou stránku -> [Odkaz na hosting](http://database-jc.wz.cz/analyzer/index.php)
 
