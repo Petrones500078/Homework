@@ -8,10 +8,10 @@
 
 # Screenshoty
 ## HTML
-![1.PNG](Screenshots/Html/1.PNG)
+![1.PNG](Screenshots/Html/1.png)
 
 ## CSS
-![1.PNG](Screenshots/Css/1.PNG)
+![1.PNG](Screenshots/Css/1.png)
 # Ukázka
 #### 
 ## Desktop:
