@@ -8,7 +8,7 @@
 ## Jakub - nadesignoval naší webovou stránku + komentáře k css
 
 # Screenshoty <br>
-# Ukázky
+# Ukázka
 #### Skenování stránky https://www.youtube.com
 ## Desktop:
 #### Před vložením URL
