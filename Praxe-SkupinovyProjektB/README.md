@@ -9,10 +9,10 @@
 
 # Screenshoty
 ## PHP
-![1.PNG](Screenshots/Php/1.PNG)
+![1.PNG](Screenshots/Php/1.png)
 
 ## CSS
-![1.PNG](Screenshots/Css/1.PNG)
+![1.PNG](Screenshots/Css/1.png)
 # Ukázka
 #### Skenování stránky https://www.youtube.com
 ## Desktop:
