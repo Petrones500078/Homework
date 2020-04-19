@@ -6,7 +6,7 @@
 ## Michael - vytvořil javascript + udělal komentáře a dokumentaci README
 ## Jakub - nadesignoval naší webovou stránku a udělal celý základ HTML (strávil nad prací nejvíce času)
 
-# Screenshoty
+# Screenshoty <br>
 # Ukázka
 #### 
 ## Desktop:
