@@ -22,7 +22,7 @@
 
 # Zhodnocení a následné řešení této sítě
 
-### Vyhodnotil jsem, že nejlepší připojení bude bezdrátové přes příjmač z firmy,mikroTIK(mikroTIK SXT), protože vzhledem k struktuře naší sítě (která je tvořená z 95% mikroTIKY) to bude nejpřehlednější řešení, která nám poskytne značné výhody při řešení problémů s připojením našeho zákazníka do budoucna. Bezdrátové připojení musím zavést, protože v okolí neposkytuji adsl připojení a můj zákazník má výhled na naše AP umístěné necelých 500 metrů od něj. 
+### Vyhodnotil jsem, že nejlepší připojení bude bezdrátové přes přijímač z firmy,mikroTIK(mikroTIK SXT), protože vzhledem k struktuře naší sítě (která je tvořená z 95% mikroTIKY) to bude nejpřehlednější řešení, která nám poskytne značné výhody při řešení problémů s připojením našeho zákazníka do budoucna. Bezdrátové připojení musím zavést, protože v okolí neposkytuji adsl připojení a můj zákazník má výhled na naše AP umístěné necelých 500 metrů od něj. 
 
 ##### Další zařízení v síti (router) budou též od výrobce mikroTIK, switche nebudou v tomto případě potřeba.
 
