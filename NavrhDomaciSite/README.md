@@ -3,13 +3,13 @@
 
 ##### ( V této práci mužete nalézt podobnosti s prací mého spolužáka [Honzy Tančiboka](https://github.com/JanTancikULTRA?tab=repositories), protože jsem mu pomáhal při tvoření jeho sítě, hlavně s vybíráním zařízení, která využije ve své síti. )
 
-#### Na celý tento úkol jsem se snažil přihlížet jako na zakázku pro zákazníka, který si nadiktoval nějaká svá zařízení, které by na to chtěl připojit a následně mě pustil dovnitř k němu domů ať si naplánuju připojení (Tudíž spíš z pohledu praxe). Protože jsem již u pár takovách připojovaček byl, tak je to pro mě přirozenější na to koukat jako na zakázku než na tvorbu pro mne (jsem velmi nenáročný). Možná se mě ptáte jaký je rozdíl mezi zakázkou a tvorbu pro sebe samotného? No je to velmi jednoduché, když jdete dělat síť pro sebe musíte si koupit třeba 40 metrů lišt za 590 Kč, ale když jdete někomu dělat internet, tak máte 40 metrů pořízených na firmu a zákazníkovy dáte zaplatit pouze to co jste na něj využil. V tomto je hlavní a zásadní rozdíl (ovšemže ne jen u lišt, ale u UTP atd..). Zmiňuji to jen proto aby vás při čtení mé dokumentace neuvedlo do rozpaku slovo zákazník (v němčině der Kunde nebo také die Kundschaft).
+#### Na celý tento úkol jsem se snažil přihlížet jako na zakázku pro zákazníka, který si nadiktoval nějaká svá zařízení, které by na to chtěl připojit a následně mě pustil dovnitř k němu domů, ať si naplánuju připojení (Tudíž spíš z pohledu praxe). Protože jsem již u pár takových připojovaček byl, tak je to pro mě přirozenější na to koukat jako na zakázku, než na tvorbu pro mne (jsem velmi nenáročný). Možná se mě ptáte jaký je rozdíl mezi zakázkou a tvorbu pro sebe samotného? No je to velmi jednoduché, když jdete dělat síť pro sebe, musíte si koupit třeba 40 metrů lišt za 590 Kč, ale když jdete někomu dělat internet, tak máte 40 metrů pořízených na firmu a zákazníkovy dáte zaplatit pouze to, co jste na něj využil. V tomto je hlavní a zásadní rozdíl (ovšem, že ne jen u lišt, ale u UTP atd..). Zmiňuji to jen proto, aby vás při čtení mé dokumentace neuvedlo do rozpaku slovo zákazník (v němčině der Kunde nebo také die Kundschaft).
 
 # Zadání
 
-### Můj zakazník si tedy přeje síť s wifi která by měla pokrýt obývací pokoj a pokoj jeho syna.
+### Můj zakazník si tedy přeje síť s wifi, která by měla pokrýt obývací pokoj a pokoj jeho syna.
 
-### Zákazník mi řekl a ukázal která zařízení vlastní a chce je připojit.
+### Zákazník mi řekl a ukázal, která zařízení vlastní a chce je připojit.
 
 ## zařízení, která připojuji
 
@@ -26,14 +26,14 @@
 
 ##### Další zařízení v síti (router) budou též od výrobce mikroTIK, switche nebudou v tomto případě potřeba.
 
-### Dobrý výhled na AP má náš zákazník z balkónu a je to strategicky nejlepší místo z kterého bude jednoduché rozvést síť na potřebná místa skrz balkonové dveře.
+### Dobrý výhled na AP má náš zákazník z balkónu a je to strategicky nejlepší místo, z kterého bude jednoduché rozvést síť na potřebná místa skrz balkonové dveře.
 
 ## Zde můžeme vidět nákres bytu našeho zákazníka i s polohou jeho zařízení. <br> (mobily a tablet mají zadanou přibližnou polohu)
 ![1.png](Screenshots/1.png)
 
 ### Nejlepší místo pro router bude vedle televizního zařízení v obýváku, wifi dosáhne s celkem dobrým signálem do kuchyně a vedlejšího pokoje,ale hlavně ušetříme za lišty, protože kabeláž z routeru do PC se bude tahat stejným místem, kterým bude zavedena do routeru.
 
-## Zde vyřeším která zařízení jak připojím
+## Zde vyřeším, která zařízení jak připojím
 
 ##### Snažím se myslet do budoucna, je možné že zařízení která má jdou připojit přes bezdrátově, ale musím myslet i na to, že to tak být nemusí a pokusím se zavést i drátové spojení do zařízení jako je TV a PC. JE VŽDY LEPŠÍ MYSLET NA TO CO BUDE NEŽLI NA TO CO JE. Například tiskárna bude buď připojená k PC nebo bezdrátově, my ji tedy započteme do zařízení v kategorii BEZDRÁTOVÉHO PŘIPOJENÍ.
 
