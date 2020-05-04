@@ -3,7 +3,7 @@
 
 ##### ( V této práci mužete nalézt podobnosti s prací mého spolužáka [Honzy Tančiboka](https://github.com/JanTancikULTRA?tab=repositories), protože jsem mu pomáhal při tvoření jeho sítě, hlavně s vybíráním zařízení, která využije ve své síti. )
 
-#### Na celý tento úkol jsem se snažil přihlížet jako na zakázku pro zákazníka, který si nadiktoval nějaké své zařízení, které by na to chtěl připojit a následně mě pustil dovnitř k němu domů ať si naplánuju připojení (Tudíž spíš z pohledu praxe). Protože jsem již u pár takovách připojovaček byl, tak je to pro mě přirozenější na to koukat jako na zakázku než na tvorbu pro mne (jsem velmi nenáročný). Možná se mě ptáte jaký je rozdíl mezi zakázkou a tvorbu pro sebe samotného? No je to velmi jednoduché, když jdete dělat síť pro sebe musíte si koupit třeba 40 metrů lišt za 590 Kč, ale když jdete někomu dělat internet, tak máte 40 metrů pořízených na firmu a zákazníkovy dáte zaplatit pouze to co jste na něj využil. V tomto je hlavní a zásadní rozdíl (ovšemže ne jen u lišt, ale u UTP atd..). Zmiňuji to jen proto aby vás při čtení mé dokumentace neuvedlo do rozpaku slovo zákazník (v němčině der Kunde nebo také die Kundschaft).
+#### Na celý tento úkol jsem se snažil přihlížet jako na zakázku pro zákazníka, který si nadiktoval nějaká svá zařízení, které by na to chtěl připojit a následně mě pustil dovnitř k němu domů ať si naplánuju připojení (Tudíž spíš z pohledu praxe). Protože jsem již u pár takovách připojovaček byl, tak je to pro mě přirozenější na to koukat jako na zakázku než na tvorbu pro mne (jsem velmi nenáročný). Možná se mě ptáte jaký je rozdíl mezi zakázkou a tvorbu pro sebe samotného? No je to velmi jednoduché, když jdete dělat síť pro sebe musíte si koupit třeba 40 metrů lišt za 590 Kč, ale když jdete někomu dělat internet, tak máte 40 metrů pořízených na firmu a zákazníkovy dáte zaplatit pouze to co jste na něj využil. V tomto je hlavní a zásadní rozdíl (ovšemže ne jen u lišt, ale u UTP atd..). Zmiňuji to jen proto aby vás při čtení mé dokumentace neuvedlo do rozpaku slovo zákazník (v němčině der Kunde nebo také die Kundschaft).
 
 # Zadání
 
@@ -22,7 +22,7 @@
 
 # Zhodnocení a následné řešení této sítě
 
-### Vyhodnotil jsem, že nejlepší připojení bude bezdrátové přes příjmač z firmy,mikroTIK(mikroTIK SXT), protože vzhledem k struktuře naší sítě (která je tvořená z 95% mikroTIKY) to bude nejpřehlednější řešení, která nám poskytne značné výhody při řešení problémů s připojením našeho zákazníka do budoucna. Bezdrátové připojení musím zavést, protože v okolí neposkytuji adsl připojení a můj zákazník má výhled na naše AP umístěné necelých 500 metrů od něj. 
+### Vyhodnotil jsem, že nejlepší připojení bude bezdrátové přes přijímač z firmy,mikroTIK(mikroTIK SXT), protože vzhledem k struktuře naší sítě (která je tvořená z 95% mikroTIKY) to bude nejpřehlednější řešení, která nám poskytne značné výhody při řešení problémů s připojením našeho zákazníka do budoucna. Musím zavést bezdrátové připojení, protože v okolí neposkytuji adsl připojení a můj zákazník má výhled na naše AP umístěné necelých 500 metrů od něj. 
 
 ##### Další zařízení v síti (router) budou též od výrobce mikroTIK, switche nebudou v tomto případě potřeba.
 
