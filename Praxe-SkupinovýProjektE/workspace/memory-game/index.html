@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pexeso</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://gwenty.gg/artifact-symbol.png" />
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+        <h1>Pexeso</h1>
+            <p>pravidla hry jsou jednoduchá, seberte pexeso co nejrychleji a také s nejmenším počtem tahů.</p>
+            <h3>Tak schválně, jaký bude váš osobní rekord</h3>
+            <p>Zde je ovládací panel hudby. (doporučeno zapnuté pro navození herní atmosféry)</p>
+            <audio controls autoplay loop id="music">
+                <source src="sound/song.mp3" type="audio/mpeg">
+            </audio>
+            <br>
+            <button onclick="Reset()" id="restart"><span>Restartovat hru</span></button>
+            <br>
+            <button class="Score"><span id="clicks">Počet tahů: 0</span></button>
+            <button class="Score"><span id="Timer">Časovač: <span id="minutes">00</span>:<span id="seconds">00</span></span></button>   
+        </div>
+    </header>
+    <section class="memory-game">
+
+
+        <audio controls preload="auto" id="flipSound">
+            <source src="sound/flip.mp3" controls></source>
+        </audio>
+
+        <audio controls preload="auto" id="hoverSound">
+            <source src="sound/hover.mp3" controls></source>
+        </audio>
+
+        <audio controls preload="auto" id="restartSound">
+            <source src="sound/restart.mp3" controls></source>
+        </audio>
+
+        <div class="memory-card" data-cardmatch="vipe">
+            <img class="front-face" src="img/vipe.png" alt="škola zmije">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+        <div class="memory-card" data-cardmatch="vipe">
+            <img class="front-face" src="img/vipe.png" alt="škola zmije">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+        <div class="memory-card" data-cardmatch="wolf">
+            <img class="front-face" src="img/wolf.png" alt="škola vlka">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+        <div class="memory-card" data-cardmatch="wolf">
+            <img class="front-face" src="img/wolf.png" alt="kartškola vlka">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+        <div class="memory-card" data-cardmatch="gryphon">
+            <img class="front-face" src="img/gryphon.png" alt="škola gryfa">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+        <div class="memory-card" data-cardmatch="gryphon">
+            <img class="front-face" src="img/gryphon.png" alt="škola gryfa">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+        <div class="memory-card" data-cardmatch="wild hunt">
+            <img class="front-face" src="img/wild hunt.png" alt="divoký hon">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+        <div class="memory-card" data-cardmatch="wild hunt">
+            <img class="front-face" src="img/wild hunt.png" alt="divoký hon">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+        <div class="memory-card" data-cardmatch="cat">
+            <img class="front-face" src="img/cat.png" alt="škola kočky">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+        <div class="memory-card" data-cardmatch="cat">
+            <img class="front-face" src="img/cat.png" alt="škola kočky">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+        <div class="memory-card" data-cardmatch="bear">
+            <img class="front-face" src="img/bear.png" alt="škola medvěda">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+        <div class="memory-card" data-cardmatch="bear">
+            <img class="front-face" src="img/bear.png" alt="škola medvěda">
+            <img class="back-face" onClick="clickCount()" src="img/backs.png" alt="záda-karty">
+        </div>
+
+    </section>
+
+    <script src="scripts.js">
+    </script>
+    <footer>
+        <div>
+            <h2 id="authors">Zaklínačské pexeso vám přináší Michael Petro, Jakub Čapek, Dominik Tichý z 3.IT</h2>
+            <br>
+            <h1 id="gameover"></h1> 
+        </div>
+    </footer>
+</body>
+</html>

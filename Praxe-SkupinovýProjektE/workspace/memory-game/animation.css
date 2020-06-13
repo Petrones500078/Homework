@@ -1,0 +1,30 @@
+.memory-card.flip {
+    z-index: +1;
+    transform: rotate(20deg);
+}
+
+.memory-card:hover {
+    z-index: +1;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.637);
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+
+  }
+  .memory-card.flip:hover {
+    z-index: +1;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.637);
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+
+  }
+
+.memory-card:active {
+    transform: rotate(20deg);
+    transition: transform .3s;
+}
+.memory-card.flip:active {
+    transform: rotate(0deg);
+    transition: transform .3s;
+}
